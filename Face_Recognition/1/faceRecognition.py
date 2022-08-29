@@ -31,6 +31,7 @@ def get_image_data():
         #print(id)
         ids.append(id)
         faces.append(image_np)
+        
     return np.array(ids), faces
 
         
