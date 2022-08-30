@@ -18,6 +18,7 @@ expected_output = int(os.path.split(test_image)[1].split('.')[0].replace('subjec
 print(expected_output)
 
 cv.putText(image_np, 'Pred:' + str(prediction[0]), (10,30), cv.FONT_HERSHEY_COMPLEX_SMALL, 1, (0,255,0))
-cv.putText(image_np, 'Exp:' + str(expected_output), (10,50), cv.FONT_HERSHEY_COMPLEX_SMALL, 1, (0,255,0))
+cv.putText(image_np, 'Conf:' + str(prediction[1]), (10,50), cv.FONT_HERSHEY_COMPLEX_SMALL, 1, (0,255,0))
+cv.putText(image_np, 'Exp:' + str(expected_output), (10,70), cv.FONT_HERSHEY_COMPLEX_SMALL, 1, (0,255,0))
 cv.imshow('a',image_np)
 cv.waitKey()

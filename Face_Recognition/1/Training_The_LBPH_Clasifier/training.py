@@ -11,7 +11,7 @@ def get_image_data():
                                                            #that the for loop will traverse
     #print(paths)
     faces = [] #store information about the list ( information about the pixels)
-    ids = [] #store the name of the classes, because we have from subject 1 to subject 15
+    ids = [] #store the name of the classes, because we have from subject 1 to subject 15, in this example
     for path in paths:
         #print(path)
         image = Image.open(path).convert('L') #we are reading the images with the Image class 

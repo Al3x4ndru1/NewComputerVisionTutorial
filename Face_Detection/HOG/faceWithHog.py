@@ -4,7 +4,7 @@ import cv2 as cv
 face_detector_hog = dlib.get_frontal_face_detector()
 #body_detector = dlib.full_object_detection()
 
-frame = cv.imread('./HOG/figsHog/people1.jpg')
+frame = cv.imread('Face_Detection/HOG/figsHog/people1.jpg')
 
 detector = face_detector_hog(frame, 2) # the imge and the ScaleFactor, which is required
 #detector = body_detector(frame, 1)
