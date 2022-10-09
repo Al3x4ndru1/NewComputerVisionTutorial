@@ -1,3 +1,5 @@
 .haarcascade
 .venv
 /yalefaces
+/venv
+venv
