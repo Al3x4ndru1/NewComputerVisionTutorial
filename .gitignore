@@ -2,4 +2,4 @@
 .venv
 /yalefaces
 /venv
-venv
+venv/
